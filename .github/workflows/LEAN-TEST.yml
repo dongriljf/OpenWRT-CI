@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
     inputs:
       TARGET:
-        default: 'IPQ60XX-WIFI-YES'
+        default: 'LEAN_IPQ60XX-WIFI-YES'
         required: true
         type: choice
         options: [LEAN_IPQ60XX-WIFI-YES, LEAN_MK7621-WIFI-YES]
