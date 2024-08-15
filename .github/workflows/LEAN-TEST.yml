@@ -1,5 +1,5 @@
 #CI项目
-name: WRT-TEST
+name: LEAN-TEST
 
 #CI计划
 on:
@@ -10,7 +10,7 @@ on:
         default: 'IPQ60XX-WIFI-YES'
         required: true
         type: choice
-        options: [MEDIATEK, ROCKCHIP, X86, IPQ60XX-WIFI-YES, IPQ60XX-WIFI-NO, IPQ807X-WIFI-YES, IPQ807X-WIFI-NO]
+        options: [LEAN_IPQ60XX-WIFI-YES, LEAN_MK7621-WIFI-YES]
       SOURCE:
         default: 'coolsnowwolf/lede'
         required: true
