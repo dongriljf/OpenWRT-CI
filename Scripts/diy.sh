@@ -7,7 +7,7 @@ rm -rf feeds/smpackage/{base-files,dnsmasq,firewall*,fullconenat,libnftnl,nftabl
 
 rm -rf feeds/luci/applications/luci-app-openclash
 cp -rf feeds/smpackage/luci-app-openclash   feeds/luci/applications/luci-app-openclash
-rm -rf feeds/smpackage/{*openclash,*homeproxy,*ikoolproxy,*nlbwmon}
+rm -rf feeds/smpackage/{*openclash,*homeproxy,*ikoolproxy}
 ./scripts/feeds install wrtbwmon
 
 #git clone https://github.com/sirpdboy/luci-app-eqosplus package/luci-app-eqosplus
