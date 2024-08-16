@@ -11,6 +11,11 @@ CONFIG_TARGET_DEVICE_qualcommax_ipq60xx_DEVICE_qihoo_360v6=y
 CONFIG_TARGET_DEVICE_qualcommax_ipq60xx_DEVICE_redmi_ax5-jdcloud=y
 CONFIG_TARGET_DEVICE_qualcommax_ipq60xx_DEVICE_xiaomi_rm1800=y
 
+CONFIG_TARGET_INITRAMFS_COMPRESSION_XZ=y
+CONFIG_TARGET_SQUASHFS_BLOCK_SIZE=1024
+# CONFIG_SIGNATURE_CHECK is not set
+# CONFIG_SIGNED_PACKAGES is not set
+
 #CONFIG_TARGET_DEVICE_PACKAGES_qualcommax_ipq60xx_DEVICE_cmiot_ax18="ipq-wifi-cmiot_ax18"
 #CONFIG_TARGET_DEVICE_PACKAGES_qualcommax_ipq60xx_DEVICE_glinet_gl-ax1800="ipq-wifi-glinet_gl-ax1800"
 #CONFIG_TARGET_DEVICE_PACKAGES_qualcommax_ipq60xx_DEVICE_glinet_gl-axt1800="ipq-wifi-glinet_gl-axt1800"
