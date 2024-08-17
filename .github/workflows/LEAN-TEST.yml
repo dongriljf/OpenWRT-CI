@@ -10,7 +10,7 @@ on:
         default: 'LEAN_MK7621-WIFI-YES'
         required: true
         type: choice
-        options: [LEAN_MK7621-WIFI-YES, LEAN_MK7621-WIFI-YES_32M, LEAN_IPQ60XX-WIFI-YES]
+        options: [LEAN_MK7621-WIFI-YES, LEAN_MK7621-WIFI-YES_32M, LEAN_IPQ4019_CM520-79F_108M, LEAN_IPQ60XX-WIFI-YES]
       SOURCE:
         default: 'coolsnowwolf/lede'
         required: true
