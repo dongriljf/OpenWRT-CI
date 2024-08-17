@@ -15,11 +15,12 @@ on:
         default: 'coolsnowwolf/lede'
         required: true
         type: choice
-        options: [VIKINGYFY/immortalwrt, immortalwrt/immortalwrt, King-Of-Knights/openwrt-6.x, LiBwrt-op/openwrt-6.x, coolsnowwolf/lede]
+        options: [padavanonly/immortalwrt, coolsnowwolf/lede,VIKINGYFY/immortalwrt, immortalwrt/immortalwrt, King-Of-Knights/openwrt-6.x, LiBwrt-op/openwrt-6.x]
       BRANCH:
         default: 'master'
         required: true
         type: string
+        options: [master,main]
       PACKAGE:
         required: false
         type: string
