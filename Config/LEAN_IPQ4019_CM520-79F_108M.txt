@@ -37,7 +37,7 @@ CONFIG_DEFAULT_luci-proto-ipv6=y
 CONFIG_PACKAGE_luci-app-vlmcsd=n
 CONFIG_PACKAGE_luci-app-vsftpd=n
 CONFIG_PACKAGE_luci-app-wol=n
-
+CONFIG_PACKAGE_luci-app-wolplus=y
 
 CONFIG_PACKAGE_luci-app-diskman=y
 CONFIG_PACKAGE_luci-app-diskman_INCLUDE_btrfs_progs=y
