@@ -7,10 +7,10 @@ on:
   workflow_dispatch:
     inputs:
       TARGET:
-        default: 'LEAN_IPQ60XX-WIFI-YES'
+        default: 'LEAN_MK7621-WIFI-YES'
         required: true
         type: choice
-        options: [LEAN_IPQ60XX-WIFI-YES, LEAN_MK7621-WIFI-YES]
+        options: [LEAN_MK7621-WIFI-YES, LEAN_MK7621-WIFI-YES_32M, LEAN_IPQ60XX-WIFI-YES]
       SOURCE:
         default: 'coolsnowwolf/lede'
         required: true
