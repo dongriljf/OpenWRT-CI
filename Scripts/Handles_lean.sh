@@ -24,6 +24,7 @@ if [ -d *"homeproxy"* ]; then
 fi
 
 #预置OpenClash内核和数据
+if [[ $WRT_TARGET != *"7621"* ]]; then
 if [ -d *"openclash"* ]; then
 	CORE_VER="https://raw.githubusercontent.com/vernesong/OpenClash/core/dev/core_version"
 	CORE_TYPE=$(echo $WRT_TARGET | grep -Eiq "64|86" && echo "amd64" || echo "arm64")
@@ -53,7 +54,7 @@ if [ -d *"openclash"* ]; then
 
 	cd $PKG_PATCH && echo "openclash date has been updated!"
 fi
-
+fi
 #移除Shadowsocks组件
 PW_FILE=$(find ./ -maxdepth 3 -type f -wholename "*/luci-app-passwall/Makefile")
 if [ -f "$PW_FILE" ]; then
