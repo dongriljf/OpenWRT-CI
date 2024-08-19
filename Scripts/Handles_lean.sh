@@ -24,7 +24,7 @@ if [ -d *"homeproxy"* ]; then
 fi
 
 #预置OpenClash内核和数据
-if [[ $WRT_TARGET != *"7621"* ]]; then
+if [[ $WRT_TARGET != *"32M"* ]]; then
 if [ -d *"openclash"* ]; then
 	CORE_VER="https://raw.githubusercontent.com/vernesong/OpenClash/core/dev/core_version"
 	CORE_TYPE=$(echo $WRT_TARGET | grep -Eiq "64|86" && echo "amd64" || echo "arm64")
