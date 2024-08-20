@@ -29,7 +29,7 @@ rm -rf feeds/packages/net/{redsocks2,shadow-tls,shadowsocks-rust,shadowsocksr-li
 rm -rf feeds/luci/applications/{luci-app-bypass,luci-app-homeproxy,luci-app-mosdns,luci-app-passwall*,luci-app-ssr-plus}
 #cp -rf feeds/smpackage/{luci-app-bypass,luci-app-homeproxy,luci-app-mosdns,luci-app-passwall,luci-app-ssr-plus}  feeds/luci/applications/
 rm -rf feeds/packages/utils/{v2dat,lua-neturl}
-./scripts/feeds install tailscale 
-./scripts/feeds install v2ray-geodata 
-./scripts/feeds install v2dat 
+#./scripts/feeds install tailscale 
+#./scripts/feeds install v2ray-geodata 
+#./scripts/feeds install v2dat 
 ./scripts/feeds install -a 
