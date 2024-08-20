@@ -77,7 +77,7 @@ if [ -f "$PW2_FILE" ]; then
 	#sed -i '/config PACKAGE_$(PKG_NAME)_INCLUDE_ShadowsocksR/,/default n/d' $PW2_FILE
 	#sed -i '/Shadowsocks_NONE/d; /Shadowsocks_Libev/d; /ShadowsocksR/d' $PW2_FILE
 
-	cd $PKG_PATCH && echo "passwall has been fixed!"
+	cd $PKG_PATCH && echo "passwall2 has been fixed!"
 fi
 
 SP_FILE=$(find ./ -maxdepth 3 -type f -wholename "*/luci-app-ssr-plus/Makefile")

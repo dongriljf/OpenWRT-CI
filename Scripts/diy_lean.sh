@@ -21,13 +21,13 @@ sed -i '$a src-git smpackage https://github.com/kenzok8/small-package' feeds.con
 
 rm -rf feeds/packages/lang/golang
 git clone https://github.com/kenzok8/golang feeds/packages/lang/golang
-#git clone -b main --single-branch https://github.com/asvow/luci-app-tailscale  package/luci-app-tailscale
+git clone -b main --single-branch https://github.com/asvow/luci-app-tailscale  package/luci-app-tailscale
 rm -rf feeds/smpackage/{base-files,dnsmasq,firewall*,fullconenat,libnftnl,nftables,ppp,opkg,ucl,upx,vsftpd*,miniupnpd-iptables,wireless-regdb}
 rm -rf feeds/packages/net/{alist,adguardhome,smartdns,mosdns,xray*,v2ray*,sing*}
-rm -rf feeds/packages/net/{tailscale,brook,chinadns-ng,dns2socks,dns2tcp,gn,hysteria,ipt2socks,microsocks,naiveproxy,pdnsd-alt}
+rm -rf feeds/packages/net/{tailscale,brook,chinadns-ng,dns2socks,dns2tcp,gn,hysteria,ipt2socks,microsocks,naiveproxy}
 rm -rf feeds/packages/net/{redsocks2,shadow-tls,shadowsocks-rust,shadowsocksr-libev,simple-obfs,ssocks,tcping,trojan*,tuic-client}
-rm -rf feeds/luci/applications/{luci-app-bypass,luci-app-homeproxy,luci-app-mosdns,luci-app-passwall*,luci-app-ssr-plus}
-cp -rf feeds/smpackage/{luci-app-bypass,luci-app-homeproxy,luci-app-mosdns,luci-app-passwall*,luci-app-ssr-plus}  feeds/luci/applications/
+rm -rf feeds/luci/applications/{luci-app-bypass,luci-app-homeproxy,luci-app-mosdns,luci-app-passwall,luci-app-ssr-plus,luci-app-oaf}
+cp -rf feeds/smpackage/{luci-app-bypass,luci-app-homeproxy,luci-app-mosdns,luci-app-passwall,luci-app-ssr-plus}  feeds/luci/applications/
 rm -rf feeds/packages/utils/{v2dat,lua-neturl}
-
+./scripts/feeds install tailscale 
 ./scripts/feeds install -a 
