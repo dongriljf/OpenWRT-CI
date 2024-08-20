@@ -26,8 +26,8 @@ rm -rf feeds/smpackage/{base-files,dnsmasq,firewall*,fullconenat,libnftnl,nftabl
 rm -rf feeds/packages/net/{alist,adguardhome,smartdns,mosdns,xray*,v2ray*,sing*}
 rm -rf feeds/packages/net/{tailscale,brook,chinadns-ng,dns2socks,dns2tcp,gn,hysteria,ipt2socks,microsocks,naiveproxy}
 rm -rf feeds/packages/net/{redsocks2,shadow-tls,shadowsocks-rust,shadowsocksr-libev,simple-obfs,ssocks,tcping,trojan*,tuic-client}
-rm -rf feeds/luci/applications/{luci-app-bypass,luci-app-homeproxy,luci-app-mosdns,luci-app-passwall,luci-app-ssr-plus}
-cp -rf feeds/smpackage/{luci-app-bypass,luci-app-homeproxy,luci-app-mosdns,luci-app-passwall,luci-app-ssr-plus}  feeds/luci/applications/
+rm -rf feeds/luci/applications/{luci-app-bypass,luci-app-homeproxy,luci-app-mosdns,luci-app-passwall*,luci-app-ssr-plus}
+#cp -rf feeds/smpackage/{luci-app-bypass,luci-app-homeproxy,luci-app-mosdns,luci-app-passwall,luci-app-ssr-plus}  feeds/luci/applications/
 rm -rf feeds/packages/utils/{v2dat,lua-neturl}
 ./scripts/feeds install tailscale 
 ./scripts/feeds install -a 
