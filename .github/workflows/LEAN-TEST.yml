@@ -7,12 +7,12 @@ on:
   workflow_dispatch:
     inputs:
       TARGET:
-        default: 'LEAN_MK7621-WIFI-YES'
+        default: 'ONLY_MK7621-WIFI-YES_32M'
         required: true
         type: choice
-        options: [LEAN_MK7621-WIFI-YES, LEAN_MK7621-WIFI-YES_32M, LEAN_IPQ4019_CM520-79F_108M, LEAN_IPQ60XX-WIFI-YES]
+        options: [ONLY_MK7621-WIFI-YES_32M,LEAN_MK7621-WIFI-YES, LEAN_MK7621-WIFI-YES_32M, LEAN_IPQ4019_CM520-79F_108M,LEAN_IPQ60XX-WIFI-YES]
       SOURCE:
-        default: 'coolsnowwolf/lede'
+        default: 'padavanonly/immortalwrt'
         required: true
         type: choice
         options: [padavanonly/immortalwrt, coolsnowwolf/lede,VIKINGYFY/immortalwrt, immortalwrt/immortalwrt, King-Of-Knights/openwrt-6.x, LiBwrt-op/openwrt-6.x]

@@ -68,6 +68,18 @@ if [ -f "$PW_FILE" ]; then
 	cd $PKG_PATCH && echo "passwall has been fixed!"
 fi
 
+PW2_FILE=$(find ./ -maxdepth 3 -type f -wholename "*/luci-app-passwall2/Makefile")
+if [ -f "$PW2_FILE" ]; then
+	sed -i '/config PACKAGE_$(PKG_NAME)_INCLUDE_Shadowsocks_Libev/,/x86_64/d' $PW2_FILE
+	sed -i '/config PACKAGE_$(PKG_NAME)_INCLUDE_Shadowsocks /,/default n/d' $PW2_FILE
+	sed -i '/Shadowsocks_NONE/d; /Shadowsocks_Libev/d' $PW2_FILE
+	
+	#sed -i '/config PACKAGE_$(PKG_NAME)_INCLUDE_ShadowsocksR/,/default n/d' $PW2_FILE
+	#sed -i '/Shadowsocks_NONE/d; /Shadowsocks_Libev/d; /ShadowsocksR/d' $PW2_FILE
+
+	cd $PKG_PATCH && echo "passwall has been fixed!"
+fi
+
 SP_FILE=$(find ./ -maxdepth 3 -type f -wholename "*/luci-app-ssr-plus/Makefile")
 if [ -f "$SP_FILE" ]; then
 	sed -i '/default PACKAGE_$(PKG_NAME)_INCLUDE_Shadowsocks_Libev/,/libev/d' $SP_FILE
