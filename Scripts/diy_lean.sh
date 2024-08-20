@@ -26,9 +26,9 @@ rm -rf feeds/packages/net/{brook,chinadns-ng,dns2socks,dns2tcp,gn,hysteria,ipt2s
 rm -rf feeds/packages/net/{redsocks2,shadow-tls,shadowsocks-rust,shadowsocksr-libev,simple-obfs,ssocks,tcping,trojan*,tuic-client}
 rm -rf feeds/luci/applications/{luci-app-bypass,luci-app-homeproxy,luci-app-mosdns,luci-app-passwall*,luci-app-ssr-plus,luci-app-mosdns}
 #cp -rf feeds/smpackage/{luci-app-bypass,luci-app-homeproxy,luci-app-mosdns,luci-app-passwall,luci-app-ssr-plus}  feeds/luci/applications/
-rm -rf feeds/packages/utils/{v2dat,lua-neturl}
+#rm -rf feeds/packages/utils/{v2dat,lua-neturl}
 #./scripts/feeds install tailscale 
-#./scripts/feeds install v2ray-geodata 
+./scripts/feeds install v2ray-geodata 
 #./scripts/feeds install v2dat 
 ./scripts/feeds install -a 
 else
