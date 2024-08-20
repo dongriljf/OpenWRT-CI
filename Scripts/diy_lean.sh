@@ -26,10 +26,9 @@ rm -rf feeds/packages/net/{brook,chinadns-ng,dns2socks,dns2tcp,gn,hysteria,ipt2s
 rm -rf feeds/packages/net/{redsocks2,shadow-tls,shadowsocks-rust,shadowsocksr-libev,simple-obfs,ssocks,tcping,trojan*,tuic-client}
 rm -rf feeds/luci/applications/{luci-app-bypass,luci-app-homeproxy,luci-app-mosdns,luci-app-passwall*,luci-app-ssr-plus,luci-app-mosdns,luci-app-smartdns,luci-app-serverchan,luci-app-ikoolproxy}
 cp -rf feeds/smpackage/{alist,adguardhome,mosdns,xray*,v2ray-core,v2raya,sing*,smartdns,openclash,homeproxy,serverchan,ikoolproxy} feeds/packages/net/
-rm -rf feeds/packages/utils/v2dat $$ cp -rf feeds/smpackage/v2dat feeds/packages/utils/v2dat
+#rm -rf feeds/packages/utils/v2dat $$ cp -rf feeds/smpackage/v2dat feeds/packages/utils/v2dat
 #./scripts/feeds install tailscale 
-./scripts/feeds install v2ray-geodata 
-#./scripts/feeds install v2dat 
+
 ./scripts/feeds install -a 
 else
 
@@ -42,7 +41,7 @@ rm -rf feeds/smpackage/{base-files,dnsmasq,firewall*,fullconenat,libnftnl,nftabl
 rm -rf feeds/luci/applications/{luci-app-bypass,luci-app-homeproxy,luci-app-mosdns,luci-app-passwall*,luci-app-ssr-plus,luci-app-mosdns,luci-app-smartdns,luci-app-serverchan,luci-app-ikoolproxy}
 rm -rf feeds/packages/net/{alist,adguardhome,mosdns,xray*,v2ray-core,v2raya,sing*,smartdns,*openclash,*homeproxy,*serverchan,*ikoolproxy,pdnsd-alt}
 cp -rf feeds/smpackage/{alist,adguardhome,mosdns,xray*,v2ray-core,v2raya,sing*,smartdns,*openclash,*homeproxy,*serverchan,*ikoolproxy,pdnsd-alt} feeds/packages/net/
-rm -rf feeds/packages/utils/v2dat $$ cp -rf feeds/smpackage/v2dat feeds/packages/utils/v2dat
+#rm -rf feeds/packages/utils/v2dat $$ cp -rf feeds/smpackage/v2dat feeds/packages/utils/v2dat
 #./scripts/feeds install wrtbwmon
 ./scripts/feeds install -a 
 
