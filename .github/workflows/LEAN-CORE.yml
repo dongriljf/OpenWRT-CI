@@ -173,9 +173,9 @@ jobs:
 
           cat $GITHUB_WORKSPACE/Config/$WRT_TARGET.txt >> .config
 
-
+       if [[ $WRT_REPO != *"padavanonly/immortalwrt"* ]]; then
           $GITHUB_WORKSPACE/Scripts/Settings.sh
-
+       fi
           make defconfig
 
       - name: Download Packages

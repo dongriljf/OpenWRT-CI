@@ -30,6 +30,7 @@ cp -rf feeds/smpackage/{alist,adguardhome,mosdns,xray*,v2ray-core,v2raya,sing*,s
 #./scripts/feeds install tailscale 
 
 ./scripts/feeds install -a 
+
 else
 
 
