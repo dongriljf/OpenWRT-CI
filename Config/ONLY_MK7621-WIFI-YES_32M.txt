@@ -39,7 +39,7 @@ CONFIG_DEFAULT_luci-app-turboacc-mtk=y
 CONFIG_DEFAULT_luci-app-upnp=y
 
 
-CONFIG_PACKAGE_luci-app-mwan3helper-chinaroute=n
+#CONFIG_PACKAGE_luci-app-mwan3helper-chinaroute=n
 
 CONFIG_PACKAGE_luci-app-oaf=n
 CONFIG_PACKAGE_appfilter=n
