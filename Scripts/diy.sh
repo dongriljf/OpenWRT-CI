@@ -9,5 +9,5 @@ rm -rf feeds/luci/applications/{*-adguardhome,*-bypass,*-homeproxy,*-mosdns,*-pa
 rm -rf feeds/packages/net/{alist,adguardhome,mosdns,xray*,v2ray-core,v2raya,sing*,smartdns,openclash,homeproxy,serverchan,ikoolproxy,qbittorrent,pdnsd-alt}
 cp -rf feeds/smpackage/{alist,adguardhome,mosdns,xray*,v2ray-core,v2raya,sing*,smartdns,openclash,homeproxy,serverchan,ikoolproxy,qbittorrent,pdnsd-alt} feeds/packages/net/
 #rm -rf feeds/packages/utils/v2dat $$ cp -rf feeds/smpackage/v2dat feeds/packages/utils/v2dat
-#./scripts/feeds install wrtbwmon
+./scripts/feeds install wrtbwmon
 ./scripts/feeds install -a 
