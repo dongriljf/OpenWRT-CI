@@ -2126,6 +2126,7 @@ endef
 TARGET_DEVICES += zio_freezio
 
 define Device/zte_e8820s
+  $(Device/dsa-migration)
   $(Device/uimage-lzma-loader)
   DEVICE_VENDOR := ZTE
   DEVICE_MODEL := E8820S
@@ -2139,7 +2140,7 @@ define Device/zte_e8820s
   IMAGE/factory.bin := append-kernel | pad-to $$(KERNEL_SIZE) | append-ubi | \
 	check-size
   DEVICE_PACKAGES := kmod-mt7603e kmod-mt76x2e kmod-usb3 \
-	luci-app-mtwifi
+	kmod-usb-ledtrig-usbport luci-app-mtwifi -wpad-openssl
 endef
 TARGET_DEVICES += zte_e8820s
 
