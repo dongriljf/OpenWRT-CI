@@ -2,7 +2,14 @@
 
 if [[ $WRT_REPO == *"padavanonly/immortalwrt"* ]]; then
 
-   #if        [ -f "$GITHUB_WORKSPACE/e8820s/mt7621_zte_e8820s.dts" ]; then
+    if        [ -f "$GITHUB_WORKSPACE/e8820s/mt7621_zte_e8820s.dts" ]; then
+             mkdir -p  $GITHUB_WORKSPACE/old_mt7621
+		cp -f target/linux/ramips/mt7621/base-files/etc/board.d/01_leds       $GITHUB_WORKSPACE/old_mt7621/01_leds                       
+		cp -f target/linux/ramips/mt7621/base-files/etc/board.d/02_network    $GITHUB_WORKSPACE/old_mt7621/02_network                   
+		cp -f package/emortal/mt-drivers/mt7603e/config.in                    $GITHUB_WORKSPACE/old_mt7621/config.in                    
+		cp -f target/linux/ramips/image/mt7621.mk                             $GITHUB_WORKSPACE/old_mt7621/mt7621.mk                    
+		cp -f target/linux/ramips/dts/mt7621_d-team_newifi-d2.dts             $GITHUB_WORKSPACE/old_mt7621/mt7621_d-team_newifi-d2.dts  
+
    #         cp -f  $GITHUB_WORKSPACE/e8820s/01_leds                     target/linux/ramips/mt7621/base-files/etc/board.d/01_leds
    #         cp -f  $GITHUB_WORKSPACE/e8820s/02_network                  target/linux/ramips/mt7621/base-files/etc/board.d/02_network
    #         cp -f  $GITHUB_WORKSPACE/e8820s/config.in                   package/emortal/mt-drivers/mt7603e/config.in
@@ -10,9 +17,9 @@ if [[ $WRT_REPO == *"padavanonly/immortalwrt"* ]]; then
    #         cp -f  $GITHUB_WORKSPACE/e8820s/mt7621_d-team_newifi-d2.dts target/linux/ramips/dts/mt7621_d-team_newifi-d2.dts
    #         cp -f  $GITHUB_WORKSPACE/e8820s/mt7621_zte_e8820s.dts       target/linux/ramips/dts/mt7621_zte_e8820s.dts 
    #         cp -f  $GITHUB_WORKSPACE/e8820s/platform.sh                 target/linux/ramips/mt7621/base-files/lib/upgrade/platform.sh
-	#   else
+   #   else
    #     echo "   ZTE_e8820s  be installed!"
-   #fi
+   fi
 			
 sed -i '$a src-git smpackage https://github.com/kenzok8/small-package' feeds.conf.default
 ./scripts/feeds update -a
