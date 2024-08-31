@@ -66,8 +66,8 @@ CONFIG_PACKAGE_wpad-openssl=y
 #增加插件，科学上网插件请在Scripts/Settings.sh调整
 
 CONFIG_PACKAGE_autocore=y
-CONFIG_PACKAGE_automount=y
-CONFIG_PACKAGE_autosamba=y
+#CONFIG_PACKAGE_automount=y
+#CONFIG_PACKAGE_autosamba=y
 CONFIG_PACKAGE_ipv6helper=y
 
 CONFIG_PACKAGE_luci-app-wolplus=y
@@ -79,8 +79,8 @@ CONFIG_PACKAGE_luci-app-tailscale=n
 CONFIG_PACKAGE_luci-app-advancedplus=y
 CONFIG_PACKAGE_luci-app-ttyd=y
 
-CONFIG_PACKAGE_luci-app-wrtbwmon=y
-CONFIG_PACKAGE_luci-app-pushbot=y
+#CONFIG_PACKAGE_luci-app-wrtbwmon=y
+#CONFIG_PACKAGE_luci-app-pushbot=y
 CONFIG_PACKAGE_luci-app-openclash=y
 
 CONFIG_PACKAGE_luci-app-homeproxy=y
