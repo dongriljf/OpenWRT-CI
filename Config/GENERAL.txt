@@ -80,7 +80,7 @@ CONFIG_PACKAGE_tailscale=y
 #CONFIG_PACKAGE_luci-app-tailscale=y
 
 
-
+#CONFIG_PACKAGE_luci-app-rtbwmon=y
 #CONFIG_PACKAGE_luci-app-wrtbwmon=y
 #CONFIG_PACKAGE_luci-app-pushbot=y
 
@@ -135,7 +135,7 @@ CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_ShadowsocksR_Libev_Client=y
 CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_ShadowsocksR_Libev_Server=y
 CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Trojan=y
 
-#CONFIG_PACKAGE_luci-app-rtbwmon=y
+
 CONFIG_PACKAGE_luci-app-store=y
 
 
